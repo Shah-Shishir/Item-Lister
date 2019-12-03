@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Item Lister</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand font-weight-bold text-centre"
+        ><h3>Item Lister</h3></a
+      >
+      <form class="form-inline">
+        <input
+          class="form-control text-sm sm"
+          type="search"
+          placeholder="Search here ..."
+          id="filter"
+          autocomplete="off"
+        />
+      </form>
+    </nav>
+    <div class="container">
+      <div class="card card-body mt-4" style="width: 40em; margin:auto">
+        <h4>Add Items</h4>
+        <form class="form-inline mb-4" id="form">
+          <br />
+          <input
+            type="text"
+            class="form-control mr-2 sm-2"
+            id="item"
+            autocomplete="off"
+            style="height:2.2em; width:180px;"
+          />
+          <button class="btn btn-sm btn-success">Add</button>
+        </form>
+        <h4>Items</h4>
+        <ul class="list-group" id="list">
+          <li class="list-group-item">
+            Item 1
+            <button class="btn btn-danger btn-sm delete float-right">
+              Remove Item
+            </button>
+          </li>
+          <li class="list-group-item">
+            Item 2
+            <button class="btn btn-danger btn-sm delete float-right">
+              Remove Item
+            </button>
+          </li>
+          <li class="list-group-item">
+            Item 3
+            <button class="btn btn-danger btn-sm delete float-right">
+              Remove Item
+            </button>
+          </li>
+          <li class="list-group-item">
+            Item 4
+            <button class="btn btn-danger btn-sm delete float-right">
+              Remove Item
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
