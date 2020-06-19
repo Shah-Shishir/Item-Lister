@@ -11,6 +11,11 @@ function addItem(e) {
 
   let item = document.querySelector("#item").value;
 
+  if (item === '') {
+    alert('Enter a valid value!');
+    return;
+  }
+
   let delBtn = document.createElement("button");
   delBtn.className = "btn btn-danger btn-sm delete float-right";
   delBtn.appendChild(document.createTextNode("Remove Item"));
